@@ -1,5 +1,5 @@
 # Initial version
-# docker run -d -p 8080 --name webpage jjperezaguinaga/webserver 
+# docker run -d -p 80:8080 --name webpage jjperezaguinaga/webserver 
 FROM gliderlabs/alpine:3.1
 MAINTAINER "Jose Aguinaga <me+docker@jjperezaguinaga.com>"
 RUN apk-install python
