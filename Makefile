@@ -6,6 +6,7 @@ DOCKER=/usr/local/bin/docker
 DIST=./dist
 DOCKER-FILE=Dockerfile
 DOCKER-REPO=jjperezaguinaga/webpage
+DOCKER-REGISTRY=tutum.co
 
 build-app:
 	$(GULP) build
@@ -16,9 +17,11 @@ build-image:
 
 build: build-app build-image
 
-# Tutum.co
-deploy-tutum:
-	# Assumes docker login on tutum.co
-	$(DOCKER)	tag -f $(DOCKER-REPO) tutum.co/$(DOCKER-REPO)
+deploy-docker:
+	# Assumes docker login 
+	$(DOCKER)	tag -f $(DOCKER-REPO) $(DOCKER-REGISTRY)/$(DOCKER-REPO)
+	$(DOCKER) push $(DOCKER-REGISTRY)/$(DOCKER-REPO)
 
-deploy: deploy-tutum
+deploy: deploy-docker
+
+production: build deploy
