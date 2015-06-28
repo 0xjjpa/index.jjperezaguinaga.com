@@ -12,9 +12,9 @@
     <meta name="author" content="{{SITE_AUTHOR}}" />
 
     <!-- DNS Prefetch / Add subdomains as required -->
-    {{#DOMAINS}}
+    <!-- {{#DOMAINS}} -->
     <link rel="dns-prefetch" href="{{{.}}}" />
-    {{/DOMAINS}}
+    <!-- {{/DOMAINS}} -->
 
     <!-- Google's Schema Org -->
     <meta content="{{{ASSET_128}}}" itemprop="image" />
@@ -62,14 +62,19 @@
     <!-- Fallback Image for Everything else -->
     <link rel="image_src" href="{{{ASSET_180}}}" />
 
+    <!-- Google Fonts: Roboto -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,100,700|Rokkitt:400&text=Jose%20Aguinaga" />
+
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/normalize.css/normalize.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/sanity.css" />
     <!-- endbuild -->
   
 </head>

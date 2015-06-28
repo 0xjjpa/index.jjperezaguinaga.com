@@ -16,7 +16,8 @@
   , "fullstack"
   ]
 , "DOMAINS": [
-  "https://assets.jjperezaguinaga.com"
+    "https://assets.jjperezaguinaga.com"
+  , "https://fonts.googleapis.com"
 ]
 , "GOOGLE_PLUS_URL": "https://plus.google.com/115504253650773840278"
 , "FAVICON": "https://assets.jjperezaguinaga.com/v1/common/favicon.ico"
