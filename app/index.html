@@ -19,28 +19,35 @@
     <!-- Google's Schema Org -->
     <meta content="{{{ASSET_128}}}" itemprop="image" />
 
-    <!-- Canonical URL -->
-    <link href="{{{CANONICAL_URL}}}" rel="canonical">
-
     <!-- Google's+ Author URL -->
     <link rel="author" href="{{{GOOGLE_PLUS_URL}}}"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Canonical URL -->
+    <link href="{{{SITE_URL}}}" rel="canonical">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <!-- Facebook's Open Graph Meta Tags -->
+    <meta property="og:url" content="{{{SITE_URL}}}" />
+    <meta property="og:site_name" content="{{SITE_TITLE}}" />
+    <meta property="og:image" content="{{{ASSET_COVER_1200}}}" />
+    <meta property="og:type" content="website" />
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    
-  </head>
-  <body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  
+</head>
+<body>
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
