@@ -1,13 +1,20 @@
 <!doctype html>
 <html itemscope="" itemtype="http://schema.org/Webpage" lang="en" xmlns:og="http://ogp.me/ns#">
   <head>
+    <!-- It's 2015 People -->
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
     <!-- Default Meta Tags -->
     <title>{{SITE_TITLE}}</title>
     <meta name="description" content="{{SITE_DESCRIPTION}}" />
     <meta name="keywords" content="{{#KEYWORDS}}{{.}}{{/KEYWORDS}}" />
     <meta name="author" content="{{SITE_AUTHOR}}" />
+
+    <!-- DNS Prefetch / Add subdomains as required -->
+    {{#DOMAINS}}
+    <link rel="dns-prefetch" href="{{{.}}}" />
+    {{/DOMAINS}}
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

@@ -1,7 +1,7 @@
 {
   "SITE_TITLE": "Jjperezaguinaga.com | Jose Aguinaga"
 , "SITE_DESCRIPTION": "Front-End Engineer, UX & Interactions Designer, Full-Stack Javascript Developer. Javascript is beauty."
-, "AUTHOR": "Jose Aguinaga"
+, "SITE_AUTHOR": "Jose Aguinaga"
 , "KEYWORDS": [
     "javascript,"
   , "angularjs,"
@@ -12,4 +12,7 @@
   , "nodejs,"
   , "fullstack"
   ]
+, "DOMAINS": [
+  "https://assets.jjperezaguinaga.com"
+]
 }
