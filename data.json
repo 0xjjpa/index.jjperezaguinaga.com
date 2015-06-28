@@ -3,6 +3,7 @@
 , "SITE_DESCRIPTION": "Front-End Engineer, UX & Interactions Designer, Full-Stack Javascript Developer. Javascript is beauty."
 , "SITE_AUTHOR": "Jose Aguinaga"
 , "SITE_URL": "https://jjperezaguinaga.com"
+, "SITE_SITEMAP_URL": "/sitemap.xml"
 , "TWITTER_HANDLE": "@jjperezaguinaga"
 , "KEYWORDS": [
     "javascript,"
