@@ -19,10 +19,11 @@ h1 {
 }
 
 p {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.0125em;
   width: 460px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5em;
+  color: #eee;
 }
 
 .main {
