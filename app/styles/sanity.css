@@ -18,3 +18,12 @@ html {
 html,body,p,ul,li,h1,h2,h3,h4,h5,h6,a,span,em {
   -webkit-text-size-adjust: none;
 }
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
