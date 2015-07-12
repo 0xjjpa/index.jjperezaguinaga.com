@@ -1,7 +1,9 @@
 {
   "name": "index-jjperezaguinaga-com",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "~3.0.3"
+  },
   "devDependencies": {
     "chai": "~3.0.0",
     "mocha": "~2.2.5"

@@ -12,9 +12,9 @@
     <meta name="author" content="{{SITE_AUTHOR}}" />
 
     <!-- DNS Prefetch / Add subdomains as required -->
-    {{#DOMAINS}}
+    <!-- {{#DOMAINS}} -->
     <link rel="dns-prefetch" href="{{{.}}}" />
-    {{/DOMAINS}}
+    <!-- {{/DOMAINS}} -->
 
     <!-- Google's Schema Org -->
     <meta content="{{{ASSET_128}}}" itemprop="image" />
@@ -62,14 +62,19 @@
     <!-- Fallback Image for Everything else -->
     <link rel="image_src" href="{{{ASSET_180}}}" />
 
+    <!-- Google Fonts: Roboto -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400|Rokkitt:400&text=Jose%20Aguinaga" />
+
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/normalize.css/normalize.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/sanity.css" />
     <!-- endbuild -->
   
 </head>
@@ -78,11 +83,15 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div class="hero-unit">
-      <h1>Jjperezaguinaga.com</h1>
-      <p>You now have</p>
+    <div class="main">
+      <h1>Jose Aguinaga</h1>
+      <p>Web Engineer. UX & Interactions Designer. Full-Stack Javascript Developer. Head of Web @Centralway.</p>
       <ul>
-        <li>HTML5 Boilerplate</li>
+        <li><a class="homepage-links" target="_blank" href="https://twitter.com/jjperezaguinaga">Twitter</a> </li>
+        <li><a class="homepage-links" href="/articles">Articles</a></li>
+        <li><a class="homepage-links" target="_blank" href="http://codepen.io/jjperezaguinaga/">Code</a></li>
+        <li><a class="homepage-links" href="mailto:me@jjperezaguinaga.com?subject=Contact%20Request">Email</a></li>
+        <li><a class="homepage-links" href="https://ch.linkedin.com/in/jjperezaguinaga" target="_blank">LinkedIn</a></li>
       </ul>
     </div>
     
