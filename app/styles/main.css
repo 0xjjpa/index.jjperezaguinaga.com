@@ -7,34 +7,35 @@ h1, p {
   margin: 0;
 }
 
+/* 1rem = 16px */
 h1 {
   font-family: "Rokkitt", 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  font-size: 48px;
+  font-size: 3rem;
   letter-spacing: 0.025em;
   line-height: 1.25em;
 }
 
 p {
   letter-spacing: 0.0525em;
-  width: 520px;
+  width: 32.5rem;
   font-weight: 100;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.5em;
   color: #eee;
 }
 
 a {
   display: inline-block;
-  margin-right: 10px;
-  padding: 8px 20px;
-  margin-top: 15px;
+  margin-right: calc(10/16 * 1rem);
+  padding: calc(8/16 * 1rem) calc(20/16 * 1rem);
+  margin-top: calc(15/16 * 1rem);
   float: left;
   border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
+  border-width: calc(1/16 * 1rem);
+  border-radius: calc(5/16 * 1rem);
   transition: color 180ms ease;
   color: white;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
   text-decoration: none;
   text-transform: none;
@@ -47,7 +48,7 @@ a:hover {
 .main {
   position: absolute;
   top: 20%;
-  left: 32px;
+  left: 2rem;
 }
 
 .browserupgrade {
