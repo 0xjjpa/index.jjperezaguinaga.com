@@ -1,6 +1,5 @@
 @media only screen
-and (max-device-width: 320px)
-and (orientation: portrait) {
+and (max-device-width: 480px) {
   html {
     font-size: 8px;
     text-align: center;
