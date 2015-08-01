@@ -86,15 +86,31 @@
     <![endif]-->
     
     <div class="main">
-      <h1>Jose Aguinaga</h1>
-      <p>Web Engineer. UX & Interactions Designer. Full-Stack Javascript Developer. Head of Web @Centralway.</p>
-      <ul>
-        <li><a class="homepage-links" target="_blank" href="https://twitter.com/jjperezaguinaga">Twitter</a> </li>
-        <li><a class="homepage-links" href="/articles">Articles</a></li>
-        <li><a class="homepage-links" target="_blank" href="http://codepen.io/jjperezaguinaga/">Code</a></li>
-        <li><a class="homepage-links" href="mailto:me@jjperezaguinaga.com?subject=Contact%20Request">Email</a></li>
-        <li><a class="homepage-links" href="https://ch.linkedin.com/in/jjperezaguinaga" target="_blank">LinkedIn</a></li>
-      </ul>
+      <div itemscope itemtype="http://schema.org/Person">
+        <img src="{{{ASSET_180}}}" itemprop="image" style='visibility: hidden;' alt="Jose Aguinaga"/>  
+        <h1>
+           <span itemprop="givenName">Jose</span>
+           <span itemprop="familyName">Aguinaga</span>
+           <meta itemprop="gender" content="Male"/>
+        </h1>
+        <div style='visibility:hidden;' itemprop="homeLocation" itemscope itemtype="http://schema.org/PostalAddress">
+            <strong>Located in:</strong>
+            <span itemprop="addressLocality">Zürich</span>,
+            <div itemprop="addressCountry" itemscope itemtype="http://schema.org/Country">
+              <span itemprop="name">Switzerland</span>
+            </div>
+        </div>
+        <div itemprop="description">
+            <p>Web Engineer. UX & Interactions Designer. Full-Stack Javascript Developer. Head of Web @Centralway.</p>
+            <ul>
+              <li><a class="homepage-links" target="_blank" href="https://twitter.com/jjperezaguinaga">Twitter</a> </li>
+              <li><a class="homepage-links" href="/articles">Articles</a></li>
+              <li><a class="homepage-links" target="_blank" href="http://codepen.io/jjperezaguinaga/">Code</a></li>
+              <li><a class="homepage-links" href="mailto:me@jjperezaguinaga.com?subject=Contact%20Request">Email</a></li>
+              <li><a class="homepage-links" href="https://ch.linkedin.com/in/jjperezaguinaga" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+      </div>
     </div>
     
     <!-- build:js scripts/vendor.js -->
