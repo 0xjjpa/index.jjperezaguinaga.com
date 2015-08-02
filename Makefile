@@ -8,6 +8,8 @@ DOCKER-FILE=Dockerfile
 DOCKER-REPO=jjperezaguinaga/webpage
 DOCKER-REGISTRY=tutum.co
 
+.DEFAULT_GOAL := build-app
+
 build-app:
 	$(GULP) build
 
