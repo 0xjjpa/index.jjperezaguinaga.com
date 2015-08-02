@@ -1,4 +1,12 @@
 {
+  "name": "index.jjperezaguinaga.com",
+  "version": "0.1.0",
+  "description": "Landing page for jjperezaguinaga.com",
+  "author": "Jose Aguinaga me@jjperezaguinaga.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjperezaguinaga/index.jjperezaguinaga.com"
+  },
   "engines": {
     "node": ">=0.12.0"
   },
