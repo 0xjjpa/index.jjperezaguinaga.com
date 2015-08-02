@@ -1,5 +1,5 @@
 SHELL=/bin/bash
-GULP=./node_modules/gulp/bin/gulp.js --gulpfile ./gulpfile.babel.js --cwd .
+GULP=./node_modules/gulp/bin/gulp.js --gulpfile ./gulpfile.babel.js --cwd $(CURDIR)
 DOCKER=/usr/local/bin/docker
 
 # Configurable variables 
