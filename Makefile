@@ -20,12 +20,12 @@ build-image:
 build: build-app build-image
 
 run: build
-	$(DOCKER) run -d -p 80:8080 --name webpage jjperezaguinaga/webpage
+	$(DOCKER) run -d -p 80:8080 --name webpage $(DOCKER-REPO)
 
 deploy-docker:
 	# Assumes docker login 
-	$(DOCKER)	tag -f $(DOCKER-REPO) $(DOCKER-REPO)
-	$(DOCKER) push $(DOCKER-REPO)
+	$(DOCKER)	tag -f $(DOCKER-REPO) $(DOCKER-REGISTRY)/$(DOCKER-REPO)
+	$(DOCKER) push $(DOCKER-REGISTRY)/$(DOCKER-REPO)
 
 deploy: deploy-docker
 
