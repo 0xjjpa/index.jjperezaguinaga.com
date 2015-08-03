@@ -31,7 +31,7 @@ a {
   margin-top: calc(15/16 * 1rem);
   float: left;
   border-style: solid;
-  border-width: calc(2/16 * 1rem);
+  border-width: 1px;
   border-radius: calc(5/16 * 1rem);
   transition: color 180ms ease;
   color: white;
