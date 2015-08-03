@@ -15,9 +15,12 @@ build-app:
 
 build-image:
 	cp $(DOCKER-FILE) $(DIST)
-	$(DOCKER) build -t=$(DOCKER-REPO) $(DIST)
+	$(DOCKER) build -t=$(DOCKER-REPO) -f=$(DIST)/$(DOCKER-FILE) $(DIST)
 
 build: build-app build-image
+
+run: build
+	$(DOCKER) run -d -p 80:8080 --name webpage jjperezaguinaga/webpage
 
 deploy-docker:
 	# Assumes docker login 
