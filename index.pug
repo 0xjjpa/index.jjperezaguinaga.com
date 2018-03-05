@@ -1,0 +1,99 @@
+include header.pug
+  body#index
+    .full-screen
+      include corners.pug
+      #home-page-box
+        .row.no-margin
+          .col.l6.hide-on-med-and-down
+            img#home-page-background(src="/img/home/background.png" alt="Home Page Background")
+          .col.l6.m12.s12
+            .row.no-margin.home-page-title
+              .col.l12.m12.s12
+                p.white-m Hi, I'm José Pérez Aguiñaga, and I'm
+                p.white-xl.home-page-description-title Web Engineer
+                p.white-m & something else
+                p.white-s.home-page-technologies Web Engineer. Javascript, #people, startups,
+                p.white-s.home-page-technologies fintech, privacy, education, blockchain.
+    .full-screen.about-me-background
+      #about-me-box
+        .row.no-margin.about-me-title.hide-on-med-and-down
+          .col.m12
+            p.no-margin.white-xxl Who I am
+        .row.no-margin.about-me-description
+          .col.l6.offset-l6.m12.s12
+            p.no-margin.white-m.about-me-description-title I'M A WEB ENGINEER & CRYPO-STARTUPS ADVISOR
+            p.white-s Jose Aguiñaga is a Web Engineer with multiple years of experience in JavaScript-related technologies. Having worked for different fintech startups in various cities across the world like Zürich, San Francisco, Mexico City, and Bali, José has developed an insider's understanding of the web ecosystem, specially in topics related to digital banks, payment solutions, online privacy and security.
+            p.white-m And also I've worked at...
+          .col.l1.offset-l6.m4.s6.about-me-numbrs
+            img(src="/img/worked-at/numbrs.png" alt="Numbrs")
+          .col.l1.m4.hide-on-small-only.about-me-flynt
+            img(src="/img/worked-at/flynt.png" alt="Flynt")
+          .col.l1.m4.s6.about-me-plaid
+            img(src="/img/worked-at/plaid.png" alt="Plaid")
+          .col.l3.hide-on-med-and-down
+    // What I Do - Escritorio
+    .full-screen.hide-on-med-and-down 
+      #what-i-do
+        .row.no-margin.what-i-do-content
+          .col.m6
+            .row.no-margin
+              .col.m12#what-i-do-pd.what-i-do
+                .what-i-do-title [pd] Prototype<br>development
+                .what-i-do-subtitle Get MVP's and technical diagrams.
+              .col.m12#what-i-do-cw.what-i-do
+                .what-i-do-title [cw] Conferences &<br>Workshops
+                .what-i-do-subtitle Developers training.
+              .col.m12#what-i-do-tw.what-i-do
+                .what-i-do-title [tw] Technical<br>writing
+                .what-i-do-subtitle Describe a subject or a technology.
+              .col.m12#what-i-do-thi.what-i-do
+                .what-i-do-title [thi] Take Home<br>Interviews
+                .what-i-do-subtitle A custom made interview process.
+          .col.m6.what-i-do-img
+            img#what-i-do-img(src="" alt="What I do image.")            
+    // What I Do - Móvil
+    .hide-on-large-only.movil
+      #what-i-do-movil
+        .row.no-margin
+          .col.m12.what-i-do-content-movil.what-i-do-pd
+            center
+              img.what-i-do-img-movil(src="/img/what-i-do/what-i-do-pd.png" alt="What I do image.")  
+            .what-i-do-title-movil [pd] Prototype<br>development
+            .what-i-do-subtitle-movil Get MVP's and technical diagrams.
+          .col.m12.what-i-do-content-movil.what-i-do-cw
+            center
+              img.what-i-do-img-movil(src="/img/what-i-do/what-i-do-cw.png" alt="What I do image.")  
+            .what-i-do-title-movil [cw] Conferences<br>& Workshops
+            .what-i-do-subtitle-movil Developers training.
+          .col.m12.what-i-do-content-movil.what-i-do-tw
+            center
+              img.what-i-do-img-movil(src="/img/what-i-do/what-i-do-tw.png" alt="What I do image.")  
+            .what-i-do-title-movil [tw] Technical<br>writing
+            .what-i-do-subtitle-movil Describe a subject or a technology.
+          .col.m12.what-i-do-content-movil.what-i-do-thi
+            center  
+              img.what-i-do-img-movil(src="/img/what-i-do/what-i-do-thi.png" alt="What I do image.")  
+            .what-i-do-title-movil [thi] Take Home<br>Interviews
+            .what-i-do-subtitle-movil A custom made interview process.
+    .projects-full-screen
+      #projects
+        .row.no-margin
+          .col.m12
+            ul#lightSlider
+              li
+                img#cdg-dev.has-profile(src="/img/projects/cdg-dev/thumbnail.png")
+              li
+                img#js-day.has-profile(src="/img/projects/js-day/thumbnail.png")
+              li
+                img#code-europe.has-profile(src="/img/projects/code-europe/thumbnail.png")
+              li
+                img#workshop.has-profile(src="/img/projects/workshop/thumbnail.png")
+              li
+                a(href="https://jayz.jjperezaguinaga.com/", target="_blank"): img(src="/img/projects/jzradio.png")
+              li
+                a(href="https://goo.gl/FetcoI", target="_blank"): img(src="/img/projects/criptografia.png")
+              li
+                a(href="https://medium.com/@jjperezaguinaga", target="_blank"): img(src="/img/projects/articulos.png")
+              li
+                
+include footer.pug
