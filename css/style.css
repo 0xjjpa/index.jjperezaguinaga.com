@@ -1,7 +1,11 @@
 /* General Utilities */
-body {
-  z-index: -10;
-  overflow-x: hidden; }
+html, body {
+  margin: 0;
+  overflow-x: hidden;
+  z-index: -10; }
+
+.projects-full-screen {
+  z-index: 1000; }
 
 .full-screen {
   width: 100vw;
@@ -142,9 +146,11 @@ body {
 @media screen and (max-width: 768px) {
   .projects-full-screen {
     width: 100vw;
-    height: 35vh;
+    height: auto !important;
+    height: 30vh;
     padding: 0 !important;
     margin: 0 !important;
+    min-height: 30vh;
     position: relative; }
   .white-s {
     color: white;
@@ -184,7 +190,7 @@ body {
     margin-top: 1.2vh; }
   #projects ul {
     list-style: none;
-    padding: 5vh 5vw; }
+    margin: 5vh 0vw; }
   #projects li img {
     display: block;
     width: 100%; }
@@ -474,12 +480,12 @@ body {
   top: 0px;
   display: block;
   background-color: #0A1A26; }
-  #projects #projects li img {
-    display: block;
-    width: 90%; }
+
+#projects li img {
+  display: block;
+  width: 100%; }
 
 #projects li {
   display: inline;
   float: left;
-  margin-right: 6px;
   cursor: pointer; }

@@ -78,8 +78,8 @@ include header.pug
     .projects-full-screen
       #projects
         .row.no-margin
-          .col.m12
-            ul#lightSlider
+          .col.s12.m12.l12
+            ul#lightSliderDesktop.hide-on-small-only
               li
                 img#cdg-dev.has-profile(src="/img/projects/cdg-dev/thumbnail.png")
               li
@@ -94,6 +94,19 @@ include header.pug
                 a(href="https://goo.gl/FetcoI", target="_blank"): img(src="/img/projects/criptografia.png")
               li
                 a(href="https://medium.com/@jjperezaguinaga", target="_blank"): img(src="/img/projects/articulos.png")
+            ul#lightSliderMovil.hide-on-med-and-up
               li
-                
+                img#cdg-dev.has-profile(src="/img/projects/cdg-dev/thumbnail.png")
+              li
+                img#js-day.has-profile(src="/img/projects/js-day/thumbnail.png")
+              li
+                img#code-europe.has-profile(src="/img/projects/code-europe/thumbnail.png")
+              li
+                img#workshop.has-profile(src="/img/projects/workshop/thumbnail.png")
+              li
+                a(href="https://jayz.jjperezaguinaga.com/", target="_blank"): img(src="/img/projects/jzradio.png")
+              li
+                a(href="https://goo.gl/FetcoI", target="_blank"): img(src="/img/projects/criptografia.png")
+              li
+                a(href="https://medium.com/@jjperezaguinaga", target="_blank"): img(src="/img/projects/articulos.png")
 include footer.pug
