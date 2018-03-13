@@ -1,0 +1,527 @@
+/* General Utilities */
+
+html, body
+  margin: 0
+  overflow-x: hidden
+  z-index: -2
+
+.projects-full-screen
+  z-index: 0
+
+.full-screen
+  width: 100vw
+  height: 100vh
+  padding: 0 !important
+  margin: 0 !important
+  position: relative
+
+@media screen and (min-width: 768px)
+
+  .projects-full-screen
+    width: 100vw
+    height: 100vh
+    padding: 0 !important
+    margin: 0 !important
+    position: relative
+
+  .white
+    &-s
+      color: white
+      font-size: 1.2rem
+    &-m
+      color: white
+      font-size: 1.8rem
+    &-l
+      color: white
+      font-size: 3.5rem
+    &-xl
+      color: white
+      font-size: 4rem
+    &-xxl
+      color: white
+      font-size: 4.5rem
+
+  .home-page-title
+    height: 100vh
+    width: 50vw
+    padding-top: 20vh
+    padding-right: 5vw
+    text-align: right
+
+  .about-me-background
+    object-fit: cover
+    left: 0px
+    top: 0px
+    display: block
+    position: relative
+    z-index: -1
+    background-image: url("../img/about-me/background.png")
+    background-repeat: no-repeat
+    background-size: 100% 100%
+
+  .about-me-description
+    height: 70vh
+    width: 100vw
+
+  .about-me-description-title
+    margin-bottom: -2vh
+    font-weight: bold
+
+  .about-me
+    &-numbrs
+      margin-right: 3.3vw
+    &-flynt
+      margin-top: 1.2vh
+      margin-right: 2vw
+    &-plaid
+      margin-top: 1.1vh
+
+  #projects ul
+    list-style: none
+    margin-top: 35vh
+    padding-left: 5vw
+    padding-right: 5vw
+
+  .project
+    &-header
+      width: 100vw
+      height: 50vh
+      padding: 0 !important
+      margin: 0 !important
+      position: relative
+      z-index: 1
+    &-overview
+      width: 100vw
+      height: 50vh
+      padding: 15vh 5vw
+      position: relative
+    &-main
+      width: 100vw
+      height: 60vh
+      padding: 3vh 25vw 7vh 25vw
+    &-multimedia
+      width: 100vw
+      height: 60vh
+      padding: 5vh 25vw
+      background-color: #0a1a26
+      margin-bottom: 7vh
+    &-footer
+      width: 100vw
+      height: 55vh
+      padding: 0 !important
+      margin: 0 !important
+      position: relative
+
+  .project
+    &-title
+      color: #000000
+      font-size: 6rem
+      font-weight: bold
+      margin: 0
+    &-subtitle
+      color: #000000
+      font-size: 2rem
+      margin: 0
+      font-style: italic
+    &-description
+      color: #000000
+      font-size: 1.1rem
+      text-align: right
+      margin-top: 5vh
+      opacity: 0.46
+      font-weight: 425
+      letter-spacing: 1px
+
+  .project-img
+    width: 100%
+    height: 100%
+
+  .header
+    &-bg
+      object-fit: cover
+      left: 0px
+      top: 0px
+      display: block
+      position: relative
+      z-index: 1
+      background-image: url("")
+      background-repeat: no-repeat
+      background-size: 100% 100%
+
+  .footer
+    &-bg
+      object-fit: cover
+      left: 0px
+      top: 0px
+      display: block
+      position: relative
+      z-index: 1
+      background-image: url("../img/projects/js-day/footer.png")
+      background-repeat: no-repeat
+      background-size: 100% 100%
+
+@media screen and (max-width: 768px)
+
+  .projects-full-screen
+    width: 100vw
+    height: auto !important   /* For IE */
+    height: 30vh              /* For IE */
+    padding: 0 !important
+    margin: 0 !important
+    min-height: 30vh
+    position: relative
+    z-index: 1
+
+  .white
+    &-s
+      color: white
+      font-size: 1.2rem
+    &-m
+      color: white
+      font-size: 2rem
+    &-l
+      color: white
+      font-size: 3.3rem
+    &-xl
+      color: white
+      font-size: 3.8rem
+    &-xxl
+      color: white
+      font-size: 4.3rem
+
+  .home-page-title
+    width: 100vw
+    height: 100vh
+    padding-top: 20vh
+    padding-right: 5vw
+    text-align: left
+
+  .about-me-background
+    position: relative
+    background-color: #38C3BF
+
+  .about-me-description
+    height: 100vh
+    width: 100vw
+    padding-left: 5vw
+    padding-top: 11vh
+
+  .about-me-description-title
+    margin-top: 10vh
+    font-weight: bold
+
+  .about-me
+    &-numbrs
+      margin-right: 0vw
+    &-plaid
+      margin-top: 1.2vh
+
+  #projects ul
+    list-style: none
+    margin: 5vh 0vw
+
+  #projects li img
+    display: block
+    width: 100%
+
+  .project
+    &-header
+      width: 100vw
+      height: 25vh
+      padding: 0 !important
+      margin: 0 !important
+      position: relative
+      z-index: 1
+    &-overview
+      width: 100vw
+      height: 75vh
+      padding: 5vh 5vw
+      position: relative
+    &-main
+      width: 100vw
+      height: 40vh
+      padding: 5vh 7vw
+    &-multimedia
+      width: 100vw
+      height: 40vh
+      padding: 5vh 7vw
+      background-color: #0a1a26
+      margin-bottom: 5vh
+    &-footer
+      width: 100vw
+      height: 25vh
+      padding: 0 !important
+      margin: 0 !important
+      position: relative
+
+  .project
+    &-title
+      color: #000000
+      font-size: 3.1rem
+      font-weight: bold
+      margin: 0
+    &-subtitle
+      color: #000000
+      font-size: 1.5rem
+      margin: 0
+      font-style: italic
+    &-description
+      color: #000000
+      font-size: 1.2rem
+      opacity: 0.46
+      font-weight: 425
+      letter-spacing: 1px
+
+  .project-img
+    width: 100%
+    height: 100%
+
+  .header
+    &-bg
+      object-fit: cover
+      left: 0px
+      top: 0px
+      display: block
+      position: relative
+      z-index: 1
+      background-image: url("")
+      background-repeat: no-repeat
+      background-size: 100% 100%
+
+  .footer
+    &-bg
+      object-fit: cover
+      left: 0px
+      top: 0px
+      display: block
+      position: relative
+      z-index: 1
+      background-image: url("../img/projects/js-day/footer.png")
+      background-repeat: no-repeat
+      background-size: 100% 100%
+
+.no-margin
+  margin: 0px
+
+/* Corner Sections */
+
+.sections
+  &-top
+    &-left
+      position: fixed
+      top: 5vh
+      left: 3vw
+      z-index: 2
+    &-right
+      position: fixed
+      top: 5vh
+      right: 5vw
+      z-index: 2
+  &-bottom
+    &-left
+      position: fixed
+      bottom: 5vh
+      left: 3vw
+      z-index: 2
+    &-right
+      position: fixed
+      bottom: 1.5vh
+      right: 2.5vw
+      z-index: 2
+
+.section
+  &-link
+    color: white
+    font-size: 1.5rem
+    font-weight: 300
+  &-active
+    color: white
+    font-size: 2rem
+    font-weight: 300
+    text-decoration: underline
+
+.return-top
+  position: fixed
+  left: 47.5vw
+  bottom: 4.5vh
+  color: white
+  z-index: 2
+
+.return-top a
+  text-decoration: none
+  color: white
+
+/* Project Corner Sections */
+
+.projects
+  &-top
+    &-left
+      position: absolute
+      top: 5vh
+      left: 3vw
+      z-index: 2
+    &-right
+      position: absolute
+      top: 5vh
+      right: 5vw
+      z-index: 2
+    &-middle
+      position: absolute
+      top: 4vh
+      left: 30vw
+      z-index: 2
+  &-bottom
+    &-right
+      position: absolute
+      bottom: 1.5vh
+      right: 2.5vw
+      z-index: 2
+
+.projects
+  &-link
+    color: white
+    font-size: 1.5rem
+    font-weight: 300
+    cursor: pointer
+
+/* Home Page */
+
+#home-page-box
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+  position: static
+  background-color: #0A1A26
+
+#home-page-background
+  height: 100vh
+  width: 100%
+  object-fit: cover
+  left: 0px
+  top: 0px
+  display: block
+  position: relative
+  z-index: 0
+  margin-left: -1vw
+
+.home-page-description-title
+  margin-top: -3vh
+  margin-bottom: -3vh
+  font-weight: bold
+
+.home-page-technologies
+  margin-top: 8vh
+  margin-bottom: -8vh
+
+/* About Me */
+
+#about-me-box
+  position: absolute
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  a i
+    color: white
+
+.about-me-title
+  margin-top: 15vh
+  height: 15vh
+  width: 100vw
+  padding-left: 6.5vw
+  font-weight: bold
+
+/* What I Do */
+
+#what-i-do
+  height: 100vh
+  width: 100vw
+  object-fit: cover
+  left: 0px
+  top: 0px
+  display: block
+  -webkit-transition: all 1.5s ease
+  -moz-transition: all 1.5s ease
+  -o-transition: all 1.5s ease
+  transition: all 1.5s ease
+
+.what-i-do
+  height: 15vh
+  cursor: pointer
+
+.what-i-do-active
+    height: 27vh
+    margin-top: 3vh
+
+.what-i-do
+  &-content
+    color: #FFFFFF
+    padding: 14vh 5vw 11vh
+  &-content-movil
+    color: #FFFFFF
+    width: 100vw
+    height: 50vh
+
+.what-i-do
+  &-subtitle
+    font-size: .7rem
+  &-subtitle-movil
+    font-size: 1.3rem
+    padding-left: 7vw
+  &-title
+    font-size: 1.8rem
+  &-title-movil
+    font-size: 2.5rem
+    font-weight: bold
+    padding-left: 7vw
+    letter-spacing: .05rem
+
+.what-i-do
+  &-pd
+    background-color: #E24649
+  &-cw
+    background-color: #1EB8A1
+  &-tw
+    background-color: #EC7B59
+  &-thi
+    background-color: #38C3BF
+
+.active
+  &-title
+    font-size: 2.5rem
+    padding-left: 10vw
+    font-weight: bold
+  &-subtitle
+    font-size: 1.8rem
+    padding-left: 10vw
+
+.what-i-do
+  &-img
+    margin-top: 5vh
+  &-img-movil
+    width: 55vw
+    height: 30vh
+    padding-top: 5vh
+    padding-bottom: 5vh
+    margin-bottom: -3vh
+
+/* Projects */
+
+#projects
+  height: 100%
+  width: 100%
+  object-fit: cover
+  left: 0px
+  top: 0px
+  display: block
+  background-color: #0A1A26
+
+#projects li img
+  display: block
+  width: 100%
+
+#projects li
+  display: inline
+  float: left
+  cursor: pointer
